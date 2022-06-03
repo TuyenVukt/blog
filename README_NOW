@@ -1,0 +1,11 @@
+-DATABASE: 
+ + Mình dùng json-serve để fake back-end
+ + Chạy lệnh  npx json-server --watch db.json --port 5500             trước khi chạy npm start để khởi động json-serve (để 2 cái chạy song song, đừng tắt json-serve)
+ + Dữ liệu được lưu trong file db.json
+- CLOUD lưu ảnh:
+ + Mình dùng cloud free api.cloudinary.com để post ảnh lên và nhận đường link về.
+ + Cái này nó cho free ae 30 ngày nên mong ae thông cảm
+- MDBTextArea: Mình dùng cái này thay cho input bình thường để hiển thị textare
+
+--------------------------MÃI IUUUUU----------------------------------------
+

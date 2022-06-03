@@ -2,7 +2,7 @@ import './App.css';
 import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import Home from './pages/Home'
 import AddEditBlog from './pages/AddEditBlog';
-import Blog from './pages/AddEditBlog';
+import Blog from './pages/Blog';
 import About from './pages/About';
 import NotFound from './pages/AddEditBlog';
 import {ToastContainer} from "react-toastify"
@@ -16,7 +16,7 @@ function App() {
         <Header />
         <ToastContainer />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />}/>
           <Route path="/addBlog" element={<AddEditBlog />} />
           <Route path="/editBlog/:id" element={<AddEditBlog />} />
           <Route path="/blog/:id" element={<Blog />} />
