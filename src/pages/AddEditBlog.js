@@ -1,23 +1,48 @@
-import React, {useState} from 'react'
-import {MDBValidation, MDBInput, MDBBtn} from 'mdb-react-ui-kit'
+import React, { useEffect, useState } from 'react'
+import { MDBValidation, MDBInput, MDBBtn, MDBTextArea } from 'mdb-react-ui-kit'
 import axios from 'axios'
-import {useNavigate} from 'react-router-dom'
-import {toast} from 'react-toastify'
+import { useNavigate, useParams } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 const initialState = {
-    title: "", 
+    title: "",
     description: "",
     category: "",
-    imgaeUrl: "",
+    imageUrl: "",
 }
 
-const options  = ["Travel", "Fashion", "Fitness", "Sports", "Food", "Tech"];
-
+const options = ["Travel", "Fashion", "Fitness", "Sports", "Food", "Tech"];
+// qgnh20c9
 const AddEditBlog = () => {
     const [formValue, setFormValue] = useState(initialState);
     const [categoryErrMsg, setCategoryErrMsg] = useState(null);
-    const {title, description, category, imgaeUrl} = formValue;
+    const [editMode, setEditMode] = useState(false);
+    const { title, description, category, imageUrl } = formValue;
     const navigate = useNavigate();
+
+    const { id } = useParams();
+
+    useEffect(() => {
+        if (id) {
+            setEditMode(true);
+            getSingleBlog(id);
+        } else {
+            setEditMode(false);
+            setFormValue({ ...initialState });
+        }
+    }, [id]);
+
+    const getSingleBlog = async (id) => {
+        const singleBlog = await axios.get(`http://localhost:5500/blogs/${id}`);
+        if (singleBlog.status === 200) {
+            setFormValue({ ...singleBlog.data });
+        } else {
+            toast.error("SOmething went wrong!")
+        }
+
+        console.log(singleBlog);
+
+    }
 
     const getDate = () => {
         let today = new Date();
@@ -31,58 +56,75 @@ const AddEditBlog = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if(!category) {
+        if (!category) {
             setCategoryErrMsg("Please select a category");
         }
-        if(title && description && imgaeUrl && category) {
+
+        const imageValidation = !editMode ? imageUrl : true;
+        if (title && description && imageUrl && category) {
             const currentDate = getDate();
-            const updateBlogData = {...formValue, data: currentDate};
-            const response = await axios.post("http://localhost:5000/blogs", updateBlogData);
-            if(response.status === 201) {
-                toast.success("Blog Created Successfully");
-            }else {
-                toast.error("Something went wrong");
+
+            if(!editMode) {
+                const updateBlogData = { ...formValue, data: currentDate };
+                const response = await axios.post("http://localhost:5500/blogs", updateBlogData);
+                if (response.status === 201) {
+                    toast.success("Blog Created Successfully");
+                } else {
+                    toast.error("Something went wrong");
+                }
+            } else {
+                const response = await axios.put(`http://localhost:5500/blogs/${id}`, 
+                formValue);
+                if (response.status === 201) {
+                    toast.success("Blog Updated Successfully");
+                } else {
+                    toast.error("Something went wrong");
+                }
             }
-            setFormValue({title: "", description: "", category: "", imgaeUrl: ""});
+            
+
+            setFormValue({ title: "", description: "", category: "", imageUrl: "" });
             navigate("/");
+            // console.log(title, description, imageUrl, category);
         }
     };
 
     const onInputChange = (e) => {
-        let {name, value} = e.target;
-        setFormValue({...formValue, [name]: value});
+        let { name, value } = e.target;
+        setFormValue({ ...formValue, [name]: value });
     };
 
     const onUploadImage = (file) => {
         // console.log("file", file);
         const formData = new FormData();
         formData.append("file", file);
-        formData.append("upload_preset", "jnecgtem");
+        formData.append("upload_preset", "qgnh20c9");
         axios
-            .post("http://api.cloudinary.com/v1_1/db9eaq2ct/image/upload", formData)
+            .post("http://api.cloudinary.com/v1_1/imagehust/image/upload", formData)//upload to a free serve
             .then((res) => {
                 toast.info("Image Uploaded Successfully");
-                setFormValue({...formValue, imgaeUrl: res.data.url})
+                setFormValue({ ...formValue, imageUrl: res.data.url })
+                // console.log("Response", res);
             })
             .catch((err) => {
-                toast.error("Something went wrong"); 
+                toast.error("Something went wrong");
             })
     }
 
     const onCategoryChange = (e) => {
         setCategoryErrMsg(null);
-        setFormValue({...formValue, category: e.target.value});
+        setFormValue({ ...formValue, category: e.target.value });
     }
 
 
     return (
-        <MDBValidation 
-            className='row g-3' 
-            style={{marginTop: "100px"}} 
-            noValidate 
+        <MDBValidation
+            className='row g-3'
+            style={{ marginTop: "100px" }}
+            noValidate
             onSubmit={handleSubmit}
         >
-            <p className='fs-2 fw'>Add Blog</p>
+            <p className='fs-2 fw-bold'>{editMode ? " Update Blog" : "Add Blog"}</p>
             <div
                 style={{
                     margin: "auto",
@@ -91,7 +133,7 @@ const AddEditBlog = () => {
                     alignContent: "center"
                 }}
             >
-                <MDBInput 
+                <MDBInput
                     value={title || ""}
                     name="title"
                     type="text"
@@ -99,11 +141,12 @@ const AddEditBlog = () => {
                     required
                     label="Title"
                     validation="Please provide a title"
-                    invalid="true"
+                    invalid
                 />
                 <br />
 
-                <MDBInput 
+
+                <MDBTextArea
                     value={description || ""}
                     name="description"
                     type="text"
@@ -111,19 +154,23 @@ const AddEditBlog = () => {
                     required
                     label="Description"
                     validation="Please provide a description"
-                    textarea="true"
-                    rows={4}
-                    invalid="true"
+                    rows={8}
+                    invalid
                 />
                 <br />
 
-                <MDBInput 
-                    type="file"
-                    onChange={(e) => onUploadImage(e.target.files[0])}
-                    required
-                    validation="Please provide a description"
-                    invalid="true"
-                />
+                {!editMode && (
+                    <MDBInput
+                        type="file"
+                        onChange={(e) => onUploadImage(e.target.files[0])}
+                        required
+                        validation="Please provide a description"
+                        invalid
+                    />
+                )}
+
+
+
                 <br />
 
                 <select className='categoryDropdown' onChange={onCategoryChange} value={category}>
@@ -137,11 +184,11 @@ const AddEditBlog = () => {
                 )}
                 <br />
                 <br />
-                
-                <MDBBtn type='submit' style={{marginRight: "10px"}}>Add</MDBBtn>
-                <MDBBtn 
-                    color='danger' 
-                    style={{marginRight: "10px"}} 
+
+                <MDBBtn type='submit' style={{ marginRight: "10px" }}>{editMode ? "Update" : "Add"}</MDBBtn>
+                <MDBBtn
+                    color='danger'
+                    style={{ marginRight: "10px" }}
                     onClick={() => navigate("/")}
                 >
                     Go Back
