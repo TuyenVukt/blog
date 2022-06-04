@@ -146,7 +146,7 @@ const Home = () => {
           <Category options={options} handleCategory={handleCategory} />
         </MDBCol>
       </MDBRow>
-      <div className="mt-3">
+      <div className="mt-3" style={{ marginBottom: "1rem" }}>
         <Pagination
           currentPage={currentPage}
           loadBlogsData={loadBlogData}

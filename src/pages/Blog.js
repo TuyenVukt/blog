@@ -54,7 +54,7 @@ const Blog = () => {
     marginTop: "7px",
   };
   return (
-    <MDBContainer style={{ border: "1px solid #d1ebe8" }}>
+    <MDBContainer style={{ border: "1px solid #d1ebe8" , marginTop: "2rem", marginBottom: "2rem"}}>
       <Link to="/">
         <strong style={{ float: "left", color: "black" }} className="mt-3">
           Go Back
