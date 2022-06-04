@@ -38,6 +38,7 @@ const Blog = () => {
     } else {
       toast.error("Something went wrong!");
     }
+    console.log(blog)
   };
 
   const excerpt = (str) => {
