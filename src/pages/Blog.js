@@ -104,18 +104,36 @@ const Blog = () => {
             {relatedPost
               .filter((item) => item.id != id)
               .map((item, index) => (
-                <MDBCol>
-                  <MDBCard>
+                <MDBCol size="4" style={{ marginTop: "2rem", marginBottom: "1rem" }}>
+                  <MDBCard className='h-100 mt-2' style={{ maxWidth: "26rem" }}> 
                     <Link to={`/blog/${item.id}`}>
                       <MDBCardImage
                         src={item.imageUrl}
                         akt={item.title}
                         position="top"
+                        style={{ maxWidth: "100%", height: "13rem" }}
                       />
                     </Link>
                     <MDBCardBody>
                       <MDBCardTitle>{item.title}</MDBCardTitle>
-                      <MDBCardText>{excerpt(item.description)}</MDBCardText>
+                      <div>
+                            <MDBIcon
+                                className="mt-1"
+                                far
+                                icon="calendar-alt"
+                                size="lg"
+                                style={{ marginRight: "5px" }}
+                            />
+                            <strong
+                            >
+                                {item.date}
+                            </strong>
+                        </div>
+                      <MDBCardText>
+                        {excerpt(item.description)}
+                        <Link to={`/blog/${id}`}>Read More</Link>
+                        </MDBCardText>
+                        <Badge>{item.category}</Badge>
                     </MDBCardBody>
                   </MDBCard>
                 </MDBCol>

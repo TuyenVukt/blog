@@ -11,7 +11,6 @@ const Badge = ({ children, styleInfo }) => {
         Tech: "info",
         Sports: "dark"
 
-
     }
     return (
         <h5 style={styleInfo}>

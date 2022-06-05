@@ -27,7 +27,7 @@ const Home = () => {
     const totalBlog = await axios.get("http://localhost:5500/blogs");
     setTotalBlog(totalBlog.data.length);
     const response = await axios.get(
-      `http://localhost:5500/blogs?_start=${start}&_end=${end}`
+      `http://localhost:5500/blogs?_sort=id&_order=desc&_start=${start}&_end=${end}`
     );
     if (response.status === 200) {
       setData(response.data);
@@ -47,10 +47,10 @@ const Home = () => {
     const start = totalBlog.data.length - 4;
     const end = totalBlog.data.length;
     const response = await axios.get(
-      `http://localhost:5500/blogs?_start=${start}&_end=${end}`
+      `http://localhost:5500/blogs?_start=${start}&_end=${end}&`
     );
     if (response.status === 200) {
-      setLatestBlog(response.data);
+      setLatestBlog(response.data.reverse());
     } else {
       toast.error("Something went wrong");
     }
