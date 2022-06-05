@@ -1,37 +1,60 @@
 {
   "blogs": [
     {
-      "title": "HANU1",
-      "description": "Siêu dự án Super League chết yểu, thương vụ Kylian Mbappe thất bại, nhưng vị thế quyền lực của Chủ tịch Florentino Perez ở sân Bernabeu gần như không lay chuyển.\n Cuộc phỏng vấn được thực hiện tháng 4/2021 nhằm thông tin rõ hơn cho dư luận về dự án Super League. Ở Anh, Italy và cả Mỹ, một nhóm các nhà tài phiệt, chuyên gia tài chính... hồi hộp theo dõi. Trong vài tuần trước tuyên bố thành lập Super League, 12 CLB hàng đầu châu Âu đã chật vật trong việc tìm ra gương mặt đại diện cho siêu dự án này. Super League là một kế hoạch phức tạp, tinh vi và cần được trình bày cẩn thận. Nhưng các ông chủ Mỹ của những đội bóng hàng đầu nước Anh không muốn đứng mũi chịu sào, và cũng chẳng tin kiến trúc sư trưởng của ý tưởng này là Perez có thể là nhân vật đại diện cho dự án.",
-      "category": "Fashion",
-      "imageUrl": "http://res.cloudinary.com/imagehust/image/upload/v1654260969/lxxw6ex7w1021jpawqa4.jpg",
-      "data": "03/05/2022",
-      "id": 1
+      "title": "Nỗi khiếp sợ của De gea",
+      "description": "Harry Maguire - Kẻ cầm đầu dòng máu quỷ, Chúa tể dẫn bóng, Thần đồng tư duy đỉnh kout, Ông hoàng chiến thuật, Chiến thần móc bóng, Vua tốc độ, ...",
+      "category": "Sports",
+      "imageUrl": "http://res.cloudinary.com/imagehust/image/upload/v1654314568/s0alqg8d7xknpgtshah9.jpg",
+      "date": "04/07/2022",
+      "id": 8
     },
     {
-      "title": "HANU2",
-      "description": "Siêu dự án Super League chết yểu, thương vụ Kylian Mbappe thất bại, nhưng vị thế quyền lực của Chủ tịch Florentino Perez ở sân Bernabeu gần như không lay chuyển.\n Cuộc phỏng vấn được thực hiện tháng 4/2021 nhằm thông tin rõ hơn cho dư luận về dự án Super League. Ở Anh, Italy và cả Mỹ, một nhóm các nhà tài phiệt, chuyên gia tài chính... hồi hộp theo dõi. Trong vài tuần trước tuyên bố thành lập Super League, 12 CLB hàng đầu châu Âu đã chật vật trong việc tìm ra gương mặt đại diện cho siêu dự án này. Super League là một kế hoạch phức tạp, tinh vi và cần được trình bày cẩn thận. Nhưng các ông chủ Mỹ của những đội bóng hàng đầu nước Anh không muốn đứng mũi chịu sào, và cũng chẳng tin kiến trúc sư trưởng của ý tưởng này là Perez có thể là nhân vật đại diện cho dự án.",
-      "category": "Fashion",
-      "imageUrl": "http://res.cloudinary.com/imagehust/image/upload/v1654260969/lxxw6ex7w1021jpawqa4.jpg",
-      "data": "03/05/2022",
-      "id": 2
+      "title": "Tôi đã kiếm 3000 nghìn tỷ trong 1 tháng như thế nào?",
+      "description": "Mới đây tôi đã phá của bố mẹ 1000 nghìn tỷ đồng, chỉ vì ham chơi tài xỉu. Nhưng mà tuổi trẻ mà, ai cũng có lúc vấp ngã. Sau vấp ngã tôi đã đứng lên, với bản lĩnh một người đàn ông tôi đã kiếm lại 3000 nghìn tỷ trong vòng 1 tháng. Bạn có muốn biết bí quyết của tôi là gì không?\nĐó là nằm mơ :D",
+      "category": "Fitness",
+      "imageUrl": "http://res.cloudinary.com/imagehust/image/upload/v1654315167/j7pkpstsaakqnzfmo1vw.webp",
+      "date": "07/08/2022",
+      "id": 9
     },
     {
-      "title": "HANU3",
-      "description": "Siêu dự án Super League chết yểu, thương vụ Kylian Mbappe thất bại, nhưng vị thế quyền lực của Chủ tịch Florentino Perez ở sân Bernabeu gần như không lay chuyển.\n Cuộc phỏng vấn được thực hiện tháng 4/2021 nhằm thông tin rõ hơn cho dư luận về dự án Super League. Ở Anh, Italy và cả Mỹ, một nhóm các nhà tài phiệt, chuyên gia tài chính... hồi hộp theo dõi. Trong vài tuần trước tuyên bố thành lập Super League, 12 CLB hàng đầu châu Âu đã chật vật trong việc tìm ra gương mặt đại diện cho siêu dự án này. Super League là một kế hoạch phức tạp, tinh vi và cần được trình bày cẩn thận. Nhưng các ông chủ Mỹ của những đội bóng hàng đầu nước Anh không muốn đứng mũi chịu sào, và cũng chẳng tin kiến trúc sư trưởng của ý tưởng này là Perez có thể là nhân vật đại diện cho dự án.",
+      "title": "Thời trang trẻ cùng Sứ giả của God Jesus edit2",
+      "description": "Trần Dần hay còn được mệnh danh “Nhà tiên tri vũ trụ”, “Sứ giả của God Jesus”,  “Đệ nhất quốc sư Hòa Kỳ”, “Đệ Nhất Khổng Minh Gia Cát Dần” mới đây đã cho ra mắt style trẻ trung cùng áo của đội tuyển bóng đá Việt Nam.",
       "category": "Fashion",
-      "imageUrl": "http://res.cloudinary.com/imagehust/image/upload/v1654260969/lxxw6ex7w1021jpawqa4.jpg",
-      "data": "03/05/2022",
-      "id": 3
+      "imageUrl": "http://res.cloudinary.com/imagehust/image/upload/v1654323563/laacc5cn7dscxwjw6u6v.jpg",
+      "date": "11/05/2021",
+      "id": 14
     },
     {
-      "title": "HANU4",
-      "description": "Siêu dự án Super League chết yểu, thương vụ Kylian Mbappe thất bại, nhưng vị thế quyền lực của Chủ tịch Florentino Perez ở sân Bernabeu gần như không lay chuyển.\n Cuộc phỏng vấn được thực hiện tháng 4/2021 nhằm thông tin rõ hơn cho dư luận về dự án Super League. Ở Anh, Italy và cả Mỹ, một nhóm các nhà tài phiệt, chuyên gia tài chính... hồi hộp theo dõi. Trong vài tuần trước tuyên bố thành lập Super League, 12 CLB hàng đầu châu Âu đã chật vật trong việc tìm ra gương mặt đại diện cho siêu dự án này. Super League là một kế hoạch phức tạp, tinh vi và cần được trình bày cẩn thận. Nhưng các ông chủ Mỹ của những đội bóng hàng đầu nước Anh không muốn đứng mũi chịu sào, và cũng chẳng tin kiến trúc sư trưởng của ý tưởng này là Perez có thể là nhân vật đại diện cho dự án.",
-      "category": "Fashion",
-      "imageUrl": "http://res.cloudinary.com/imagehust/image/upload/v1654260969/lxxw6ex7w1021jpawqa4.jpg",
-      "data": "03/05/2022",
-      "id": 4
+      "title": "Atlas robot - Ngày tàn của loài người",
+      "description": "Bạn nghĩ sao về một con Robot có thể parkour. Nhóm nghiên cứu đã đẩy Atlas đến giới hạn của nó để khám phá thế hệ tiếp theo của khả năng vận động, nhận thức và trí thông minh thể thao. Atlas có thể thực các thao tác parkour như: chạy, nhảy, giữ thăng bằng, nhào luộn,.v.v...",
+      "category": "Tech",
+      "imageUrl": "http://res.cloudinary.com/imagehust/image/upload/v1654323623/ahbiewsytn8cn00lttop.png",
+      "date": "04/02/2022",
+      "id": 15
+    },
+    {
+      "title": "Thịt xào chua ngọt",
+      "description": "Thơm ngon mời bạn ăn nha Tôi đây không chờ bạn nữa... Giờ tôi ăn liền Ăn nha...!",
+      "category": "Food",
+      "imageUrl": "http://res.cloudinary.com/imagehust/image/upload/v1654323653/dzgmfdcajgiumvbt0see.jpg",
+      "date": "04/05/2022",
+      "id": 16
+    },
+    {
+      "title": "Vịnh Hạ Long",
+      "description": "Vịnh Hạ Long là Di sản Thế giới được UNESCO công nhận và là điểm đến du lịch nổi tiếng ở tỉnh Quảng Ninh , Việt Nam . Cái tên Hạ Long có nghĩa là \"con rồng cháu tiên\".",
+      "category": "Travel",
+      "imageUrl": "http://res.cloudinary.com/imagehust/image/upload/v1654323679/rzdst6kptwg3cjwal1hr.jpg",
+      "date": "04/05/2022",
+      "id": 17
+    },
+    {
+      "title": "Việt Nam - Hàn Quốc: Chờ địa chấn ở U23 châu Á",
+      "description": "Bị đánh giá thấp hơn nhưng với sự trở lại của nhiều trụ cột, Việt Nam có cơ sở để hướng đến một điểm khi gặp ĐKVĐ Hàn Quốc tại bảng C giải U23 châu Á 2022.\n*Việt Nam - Hàn Quốc: 20h Chủ nhật 5/6, trên VnExpress.\n\nDù áp đảo Malaysia ở trận ra quân, khi dứt điểm nhiều hơn đối thủ gấp năm lần và thắng 4-1, HLV Hwang Sun-hong chưa hài lòng. \"Chiến thắng cách biệt như vậy không quan trọng\", ông nói trước trận gặp Việt Nam ở lượt hai bảng C hôm nay. \"Vấn đề là có những thời điểm trong trận đấu, Hàn Quốc chơi bị động. Chúng tôi phải cải thiện điều này trước Việt Nam. Tôi không quan tâm Hàn Quốc sẽ thắng cách biệt mấy bàn, mà chỉ tập trung vào trận đấu. Không thể đánh giá đội nào mạnh hơn, nhưng mục tiêu của chúng tôi trước mắt là vào tứ kết\".\nĐể vào tứ kết ngay sau lượt thứ hai, Hàn Quốc cần thắng Việt Nam, không cần biết cách biệt bao nhiêu. Với tư cách đương kim vô địch châu Á và Asiad, họ vẫn ở đẳng cấp khác tại cấp độ U23. Và với những tuyên bố của HLV Hwang, Hàn Quốc có thể sẽ tung đội hình mạnh nhất để vượt qua vòng bảng sớm một lượt đấu. Khi đó, họ có thể đá lỏng chân một chút ở lượt cuối gặp Thái Lan, nhằm giữ sức cho các trụ cột ở tứ kết.\n\nMục tiêu của Hàn Quốc dĩ nhiên là ba điểm, còn Việt Nam sẽ thành công nếu giành một điểm. Khi đó, Hàn Quốc chưa chắc suất đi tiếp, sẽ phải quyết chiến với Thái Lan ở lượt cuối. Nếu thầy trò Gong Oh-kyun cầm hoà Hàn Quốc, cửa vào tứ kết sẽ rộng mở.\n\nNhưng cầm hoà Hàn Quốc ở một trận đấu quan trọng như vậy không đơn giản, với bất cứ đội bóng nào ở châu Á. Trong bốn cuộc đối đầu trước đây giữa hai đội ở các giải chính thức, Việt Nam toàn thua. Cách biệt tỷ số chưa bao giờ quá hai bàn, nhưng việc cầm hoà Hàn Quốc dường như vẫn còn xa vời.\n\nĐiểm thuận lợi cho Việt Nam là hàng thủ đón trung vệ Nguyễn Thanh Bình trở lại, sau khi anh gặp vấn đề sức khoẻ và vắng trận ra quân hoà Thái Lan hôm 2/6. Thanh Bình sẽ đá cặp trung vệ với Bùi Hoàng Việt Anh, trả Nhâm Mạnh Dũng trở lại vị trí trung phong cắm thay cho Trần Danh Trung. Nhiệm vụ của hai trung vệ Việt Nam càng thêm quan trọng, khi HLV Gong ưa dùng sơ đồ 4-1-4-1, thay vì 5-3-2 như HLV Park Hang-seo.\nTiền vệ Lý Công Hoàng Anh cũng có thể đá chính trở lại, thay cho một trong hai cầu thủ mới 19 tuổi là Nguyễn Văn Trường và Khuất Văn Khang. Hai cầu thủ tuổi teen này đều có dấu hiệu căng cơ ở hiệp hai trận Thái Lan, do không được thi đấu ở SEA Games. Nhưng ít nhiều cả hai đã để lại dấu ấn, giúp họ có cơ hội giữ vị trí chính thức. Việt Nam gần như sẽ có đội hình mạnh nhất, ngoại trừ thủ môn Nguyễn Văn Toản chưa bình phục chấn thương trật khớp ngón tay.\n\nVăn Trường đã nói rằng Việt Nam thoải mái khi gặp Hàn Quốc, vì nằm ở cửa dưới. Với tâm lý đó, đoàn quân của Gong có thể hy vọng vào một bất ngờ. Ít nhất là tân HLV này tin tưởng các học trò, và ngưỡng mộ tinh thần chiến đấu của cầu thủ Việt Nam. \"Chúng tôi còn hai trận chưa đấu, và còn khả năng đi tiếp. Tôi đã có kế hoạch cho hai trận còn lại, và hoàn toàn tin vào các cầu thủ\", ông nói.\n\nHàn Quốc vẫn đang toàn thắng dưới thời Hwang, còn Việt Nam hiện có chuỗi 13 trận bất bại ở các giải chính thức. Một trong hai thành tích này sẽ phải chấm dứt sau 90 phút trên sân Lokomotiv.",
+      "category": "Sports",
+      "imageUrl": "http://res.cloudinary.com/imagehust/image/upload/v1654414397/pigmxdhui3ybrfb2boa9.jpg",
+      "date": "05/05/2022",
+      "id": 18
     }
-    
   ]
 }

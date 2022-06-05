@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const NotFound = () => {
-    return (
-        <div>
-            <h2>NotFound</h2>
-        </div>
-    )
+  return (
+    <div>
+      <img src="/images/404.jpg" alt="Not found" />
+    </div>
+  );
 };
 
 export default NotFound;

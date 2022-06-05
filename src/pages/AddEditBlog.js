@@ -65,8 +65,8 @@ const AddEditBlog = () => {
             const currentDate = getDate();
 
             if(!editMode) {
-                const updateBlogData = { ...formValue, data: currentDate };
-                const response = await axios.post("http://localhost:5500/blogs", updateBlogData);
+                const updateBlogdate = { ...formValue, date: currentDate };
+                const response = await axios.post("http://localhost:5500/blogs", updateBlogdate);
                 if (response.status === 201) {
                     toast.success("Blog Created Successfully");
                 } else {
@@ -75,7 +75,7 @@ const AddEditBlog = () => {
             } else {
                 const response = await axios.put(`http://localhost:5500/blogs/${id}`, 
                 formValue);
-                if (response.status === 201) {
+                if (response.status === 200) {
                     toast.success("Blog Updated Successfully");
                 } else {
                     toast.error("Something went wrong");

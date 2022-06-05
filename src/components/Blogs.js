@@ -12,7 +12,7 @@ import {
 import { Link } from 'react-router-dom'
 import Badge from './Badge';
 
-const Blog = ({ title, category, description, id, imageUrl, excerpt, handleDelete }) => {
+const Blog = ({ title, date, category, description, id, imageUrl, excerpt, handleDelete }) => {
     return (
         <>
             <MDBCol size="4" style={{ marginTop: "2rem", marginBottom: "1rem" }}>
@@ -25,6 +25,20 @@ const Blog = ({ title, category, description, id, imageUrl, excerpt, handleDelet
                     />
                     <MDBCardBody>
                         <MDBCardTitle>{title}</MDBCardTitle>
+                        <div>
+                            <MDBIcon
+                                className="mt-1"
+                                far
+                                icon="calendar-alt"
+                                size="lg"
+                                style={{ marginRight: "5px" }}
+                            />
+                            <strong
+                            >
+                                {date}
+                            </strong>
+                        </div>
+
                         <MDBCardText>
                             {excerpt(description)}
                             <Link to={`/blog/${id}`}>Read More</Link>
