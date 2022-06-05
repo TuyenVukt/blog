@@ -14,12 +14,12 @@ const Home = () => {
   const [searchValue, setSearchValue] = useState("");
   const [currentPage, setCurrentPage] = useState(0);
   const [totalBlog, setTotalBlog] = useState(null);
-  const [pageLimit] = useState(5);
+  const [pageLimit] = useState(6);
 
   const options = ["Travel", "Fashion", "Fitness", "Sports", "Food", "Tech"];
 
   useEffect(() => {
-    loadBlogData(0, 5, 0);
+    loadBlogData(0, 6, 0);
     fetchLatestBlog();
   }, []);
 
@@ -78,7 +78,7 @@ const Home = () => {
   //search handle
   const onInputChange = (e) => {
     if (!e.target.value) {
-      loadBlogData(0, 5, 0);
+      loadBlogData(0, pageLimit, 0);
     }
     setSearchValue(e.target.value);
   };
