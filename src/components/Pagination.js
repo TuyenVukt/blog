@@ -27,7 +27,7 @@ const Pagination = ({
             <MDBPaginationLink>1</MDBPaginationLink>
           </MDBPaginationItem>
           <MDBPaginationItem>
-            <MDBBtn rounded onClick={() => loadBlogsData(5, 10, 1)}>
+            <MDBBtn rounded onClick={() => loadBlogsData(pageLimit, pageLimit*2, 1)}>
               Next
             </MDBBtn>
           </MDBPaginationItem>
@@ -44,7 +44,7 @@ const Pagination = ({
             <MDBBtn
               rounded
               onClick={() =>
-                loadBlogsData((currentPage - 1) * 5, currentPage * 5, -1)
+                loadBlogsData((currentPage - 1) * pageLimit, currentPage * pageLimit, -1)
               }
             >
               Prev
@@ -57,7 +57,7 @@ const Pagination = ({
             <MDBBtn
               rounded
               onClick={() =>
-                loadBlogsData((currentPage + 1) * 5, (currentPage + 2) * 5, 1)
+                loadBlogsData((currentPage + 1) * pageLimit, (currentPage + 2) * pageLimit, 1)
               }
             >
               Next
@@ -72,7 +72,7 @@ const Pagination = ({
             <MDBBtn
               rounded
               onClick={() =>
-                loadBlogsData((currentPage - 1) * 5, currentPage * 5, -1)
+                loadBlogsData((currentPage - 1) * pageLimit, currentPage * pageLimit, -1)
               }
             >
               Prev

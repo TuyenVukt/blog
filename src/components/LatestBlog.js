@@ -12,7 +12,7 @@ const LatestBlog = ({ imageUrl, title, id }) => {
   return (
     <div>
       <Link to={`/blog/${id}`}>
-        <MDBCard style={{ maxWidth: "300px", height: "80px" }} className="mt-2">
+        <MDBCard style={{ maxWidth: "300px", minHeight: "80px" }} className="mt-2">
           <MDBRow className="g-0">
             <MDBCol md="3">
               <MDBCardImage

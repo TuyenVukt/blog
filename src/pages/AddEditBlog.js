@@ -75,7 +75,7 @@ const AddEditBlog = () => {
             } else {
                 const response = await axios.put(`http://localhost:5500/blogs/${id}`, 
                 formValue);
-                if (response.status === 201) {
+                if (response.status === 200) {
                     toast.success("Blog Updated Successfully");
                 } else {
                     toast.error("Something went wrong");
