@@ -92,7 +92,7 @@ const Blog = () => {
           </strong>
           <Badge styleInfo={styleInfo}>{blog && blog.category}</Badge>
         </div>
-        <MDBTypography className="lead md-0">
+        <MDBTypography className="lead md-0" style={{textAlign: "left"}}>
           {blog && blog.description}
         </MDBTypography>
       </div>
